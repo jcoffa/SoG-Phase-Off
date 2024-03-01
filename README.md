@@ -1,6 +1,8 @@
 # Secrets of Grindea - Phase Off
 
 An AutoHotkey script to complete the Secrets of Grindea "Phase-Off" course in under 20 seconds.
+Specifically, this script is able to achieve a clear time of roughly 14.10 seconds depending on several factors.
+The fastest recorded was 14.03 seconds, while the slowest was 14.16 seconds.
 
 Based on [the route from YouTube channel Chaldo and their 14.19 second clear time](https://youtu.be/0fyMZx7T2Kk).
 
