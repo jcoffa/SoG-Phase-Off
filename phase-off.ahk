@@ -59,19 +59,107 @@ SpamGo(total_frames, wait := 1) {
 	Send "{Up up}"
 	; We are now standing on top of the phase plate
 
+
+	; NOTE: Travel time is included in the Frames() waiting time alongside any additional waiting
+	; reasons described in each of the comments. If a comment does not list any other waiting
+	; reason, then the waiting time is purely for travel time.
+
+	; Start the course with correct timing; a slight delay after the 1st spinning barrel points up
 	Frames(143)
 	Go()
+
+	; Fire out of the stationary barrel facing right
 	Frames(17)
 	Go()
+
+	; Fire up-right out of the 1st spinning barrel into the stationary barrel facing down
 	Frames(25)
 	Go()
+
+	; Dodge the moving block to enter the 2nd spinning barrel (bottom right)
 	Frames(11)
+	Go()	; 2:05
+
+	; Wait for barrel to aim up-left to enter the 3rd spinning barrel (top middle)
+	Frames(42)
 	Go()
-	; We are now in the bottom right spinning barrel.
-	; We must wait for it to change direction to send us up-left.
+
+	; Wait for barrel to aim down-left and shoot into the mirror
+	Frames(66)
+	Go()
+
+	; Wait for horizontally-moving barrel facing up to get into the right position to shoot past
+	; the mirror
+	Frames(74)
+	Go()
+
+	; Fire out the circular-moving barrel facing right to shoot into the bottom triangle mirror
+	; so we can get past the electric shock
+	Frames(34)
+	Go()
+
+	; Fire out the circular-moving barrel facing right to shoot into the top square mirror
+	; now that we are past the electric shock
+	Frames(52)
+	Go()
+
+	; Wait for the 2 circular-moving barrels to line up and then shoot out of the bottom one into
+	; the top one so we can get past the electric shock
+	Frames(52)
+	Go()
+
+	; Wait for the top circular-moving barrel to line up the triangle mirror
+	Frames(70)
+	Go()
+
+	; Fire out the stationary barrel facing up-left to get into the horizontally-moving
+	; spinning barrel
+	Frames(42)
+	Go()
+
+	; Fire out the spinning barrel facing up-right to hit the triangle mirror and bounce into the
+	; vertically-moving barrel facing left
+	Frames(16)
+	Go()
+
+	; Fire out the vertically-moving barrel facing left into the stationary barrel facing up
+	Frames(44)
+	Go()
+
+	; Fire out the stationary barrel facing up into the stationary barrel facing right while getting
+	; past the two moving blocks
+	Frames(26)
+	Go()
+
+	; Wait to line up with the vertically-moving barrel facing down-right
+	Frames(54)
+	Go()
+
+	; Fire out the vertically-moving barrel into the square mirror and bounce into the upper
+	; stationary barrel facing right to get past the electric shock
+	Frames(16)
+	Go()
+
+	; Fire out the stationary barrel facing right into the vertically-moving barrel facing
+	; down-right now that we're past the electric shock
+	Frames(40)
+	Go()
+
+	; XXX HERE XXX
+	; Fire out the vertically-moving barrel facing down-right into the spinning barrel
+	Frames(14)
+	Go()
+
+	; Wait for spinning barrel to face up-right and fire into the stationary barrel facing up
+	Frames(32)
+	Go()
+
+	; Wait for the blocks to move and now spam through the remaining 3 stationary barrels facing up!
+	Frames(34)
+	SpamGo(50)
 
 	return
 }
 
-; vim: noet ts=4 sw=4
+; vim: noet ts=4 sw=4 tw=100
 
