@@ -40,8 +40,8 @@ it until it worked!
 This issue can be solved in the same way on your end; by playing around with this number on line 68 of the script:
 
 ```autohotkey
-	; Start the course with correct timing; a slight delay after the 1st spinning barrel points up
-	Frames(143)	; NOTE: Some users may need to change this value if they find their timing is off
+; Start the course with correct timing; a slight delay after the 1st spinning barrel points up
+Frames(143)	; NOTE: Some users may need to change this value if they find their timing is off
 ```
 
 This is the amount of time that your character waits on top of the initial phase plate before getting fired into the first barrel
@@ -55,7 +55,7 @@ That should *theoretically* be the only number you have to change. However, you 
 character doesn't even make it back to the initial phase plate to start the course:
 
 ```autohotkey
-	Frames(60)	; Wait for loading chamber entrance
+Frames(60)	; Wait for loading chamber entrance
 ```
 
 ## Why?
