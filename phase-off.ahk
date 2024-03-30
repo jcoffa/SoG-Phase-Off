@@ -65,7 +65,7 @@ SpamGo(total_frames, wait := 1) {
 	; reason, then the waiting time is purely for travel time.
 
 	; Start the course with correct timing; a slight delay after the 1st spinning barrel points up
-	Frames(143)
+	Frames(143)	; NOTE: Some users may need to change this value if they find their timing is off
 	Go()
 
 	; Fire out of the stationary barrel facing right
@@ -78,7 +78,7 @@ SpamGo(total_frames, wait := 1) {
 
 	; Dodge the moving block to enter the 2nd spinning barrel (bottom right)
 	Frames(11)
-	Go()	; 2:05
+	Go()
 
 	; Wait for barrel to aim up-left to enter the 3rd spinning barrel (top middle)
 	Frames(42)
@@ -145,7 +145,6 @@ SpamGo(total_frames, wait := 1) {
 	Frames(40)
 	Go()
 
-	; XXX HERE XXX
 	; Fire out the vertically-moving barrel facing down-right into the spinning barrel
 	Frames(14)
 	Go()

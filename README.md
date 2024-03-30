@@ -41,7 +41,7 @@ This issue can be solved in the same way on your end; by playing around with thi
 
 ```autohotkey
 	; Start the course with correct timing; a slight delay after the 1st spinning barrel points up
-	Frames(143)
+	Frames(143)	; NOTE: Some users may need to change this value if they find their timing is off
 ```
 
 This is the amount of time that your character waits on top of the initial phase plate before getting fired into the first barrel
